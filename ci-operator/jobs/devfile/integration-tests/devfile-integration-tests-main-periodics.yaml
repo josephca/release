@@ -81,8 +81,6 @@ periodics:
   cluster: build01
   cron: 0 2 * * 5
   decorate: true
-  decoration_config:
-    skip_cloning: true
   extra_refs:
   - base_ref: main
     org: devfile
@@ -233,8 +231,6 @@ periodics:
   cluster: build01
   cron: 0 2 * * 1-5
   decorate: true
-  decoration_config:
-    skip_cloning: true
   extra_refs:
   - base_ref: main
     org: devfile
@@ -385,8 +381,6 @@ periodics:
   cluster: build01
   cron: 0 2 * * 1-5
   decorate: true
-  decoration_config:
-    skip_cloning: true
   extra_refs:
   - base_ref: main
     org: devfile

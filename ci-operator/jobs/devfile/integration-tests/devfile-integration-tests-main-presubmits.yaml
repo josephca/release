@@ -60,8 +60,6 @@ presubmits:
     cluster: build04
     context: ci/prow/v4.10.odo-images
     decorate: true
-    decoration_config:
-      skip_cloning: true
     labels:
       ci-operator.openshift.io/variant: v4.10.odo
       ci.openshift.io/generator: prowgen
@@ -163,8 +161,6 @@ presubmits:
     cluster: build04
     context: ci/prow/v4.11.odo-images
     decorate: true
-    decoration_config:
-      skip_cloning: true
     labels:
       ci-operator.openshift.io/variant: v4.11.odo
       ci.openshift.io/generator: prowgen
@@ -266,8 +262,6 @@ presubmits:
     cluster: build04
     context: ci/prow/v4.12.odo-images
     decorate: true
-    decoration_config:
-      skip_cloning: true
     labels:
       ci-operator.openshift.io/variant: v4.12.odo
       ci.openshift.io/generator: prowgen

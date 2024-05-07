@@ -5,7 +5,7 @@ build_root:
       RUN yum -y install make wget gcc git httpd-tools
 images:
 - context_dir: .ibm/images
-  dockerfile_path: Dockerfile
+  dockerfile_path: Dockerfile.ocp_4.13
   to: showcase-e2e-runner
 releases:
   initial:
@@ -25,13 +25,8 @@ resources:
       cpu: 500m
       memory: 2Gi
 tests:
-- as: e2e-tests
-  skip_if_only_changed: ^docs/|showcase-docs/|^\.changeset/|CONTRIBUTING\.md|OWNERS|README\.md|USAGE_DATA\.md|^scripts/|^\.github/|\.threatmodel/|^ui/|\.md$
-  steps:
-    test:
-    - ref: janus-idp-backstage-showcase
 - as: e2e-tests-nightly
-  cron: 0 1 * * *
+  cron: 0 3 * * *
   steps:
     test:
     - ref: janus-idp-backstage-showcase-nightly
@@ -39,3 +34,4 @@ zz_generated_metadata:
   branch: main
   org: janus-idp
   repo: backstage-showcase
+  variant: v4.13

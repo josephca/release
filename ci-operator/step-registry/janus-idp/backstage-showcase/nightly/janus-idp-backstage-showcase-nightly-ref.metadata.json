@@ -2,12 +2,14 @@
 	"path": "janus-idp/backstage-showcase/nightly/janus-idp-backstage-showcase-nightly-ref.yaml",
 	"owners": {
 		"approvers": [
+			"gustavolira",
 			"josephca",
 			"rnapoles-rh",
 			"subhashkhileri"
 		],
 		"reviewers": [
 			"albarbaro",
+			"gustavolira",
 			"josephca",
 			"rnapoles-rh",
 			"subhashkhileri"
